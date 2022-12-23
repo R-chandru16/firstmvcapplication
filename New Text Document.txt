@@ -1,0 +1,25 @@
+h2
+    welcome @ViewBag.Name
+h2
+h2
+    From viewdata @ViewData[Username]
+ h2
+hr
+div
+h1View bag scoresh1
+ul
+   @foreach(var item in ViewBag.Scores)
+    {
+    li@itemli
+    }
+ul
+div
+div
+    h1View Data scoresh1
+    ul
+        @foreach (var item in ((IEnumerableint)ViewData[Scores]))
+        {
+        li@itemli
+        }
+    ul
+div
